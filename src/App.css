@@ -1,0 +1,9 @@
+@font-face {
+    font-family: yekanBakhMedium;
+    src: url("./fonts/YekanBakhMedium.woff");
+}
+.App{
+    font-family: yekanBakhMedium;
+}
+
+

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: YekanBakhHeavy;
+    src: url("../fonts/iranyekanwebmedium.woff");
+}
+
+.headerContainer{
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    min-height: 600px;
+    background: linear-gradient(110deg, #021f4f, #094c9d);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px 10px 60px;
+    position: relative;
+}
+
+.arrowBottom{    
+    width: 100px;
+    height: 40px;
+    background: url("../images/arrowbottom.svg");
+    background-size: cover;
+    position: absolute;
+    right: calc(50% - 50px);
+    bottom: -20px;
+    text-align: center;
+}
+
+.arrowBottom img{
+    width: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.headerLeft{
+    width: 45%;
+}
+
+.headerLeft img{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.headerRight{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.headerRight *{
+    margin: 20px 0;
+}
+
+.headerTitle{
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: YekanBakhHeavy , sans-serif !important;
+}
+
+.headerPrg{
+    line-height: 35px;
+}
+
+.headerLinks{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.linkSignIn, 
+.linkSignUp{
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 12px;
+    border-radius: 7px;
+    font-family: YekanBakhMedium, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.linkSignIn{
+    background-color: #ffffff33;
+    color: #fff;
+}
+
+.linkSignUp{
+    background-color: #ffee00;
+    font-weight: bold;
+    color: #353535;
+}
+
+
+@media (max-width: 1060px){
+    .headerLeft{
+        display: none;
+    }
+
+    .headerRight{
+        width: 98%;
+        text-align: center;
+    }
+
+    .headerLinks{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px){
+    .headerTitle{
+        text-align: right;
+        font-size: 1.2rem;
+    }
+
+    .headerPrg{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px){
+    .headerContainer{
+        width: calc(100% - 40px);
+        padding: 50px 20px 10px 20px;
+    }
+}

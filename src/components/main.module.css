@@ -1,0 +1,150 @@
+@font-face {
+    font-family: YekanBakhHeavy;
+    src: url("../fonts/YekanBakhHeavy.woff");
+}
+
+.mainContainer{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    line-height: 20px;
+    column-gap: 100px;
+}
+
+.rowDiv{
+    text-align: right;
+    padding: 10px 15px;
+}
+
+.rowTitle{
+    color: #9d9d9d;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.rowSubTitle{
+    font-size: 1.5rem;
+    line-height: 35px;
+    font-family: YekanBakhHeavy !important;
+}
+
+.rowPrg{
+    font-size: 0.8rem;
+    line-height: 40px;
+    border-bottom: 0.5px solid #d4d4d4;
+}
+
+.rowBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rowBtn button{
+    padding: 7px 14px;
+    margin: 17px 0 0 10px;
+    font-family: YekanBakhMedium, sans-serif;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.readMoreBtn{
+    display: flex;
+    align-items: center;
+    color: #28457b;
+    background-color: #e8effe99;
+}
+
+.goldenBtn{
+    background-color: #ffd900;
+}
+
+.rowBtn img{
+    width: 12px;
+    margin: 0 5px;
+}
+
+.rowImage{
+    text-align: center;
+}
+
+.rowImage img{
+    width: 65%;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 1160px){
+    .mainContainer{
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 950px){
+    .mainContainer{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        row-gap: 30px;
+    }
+
+    .rowSubTitle{
+        font-size: 1.8rem;
+    }
+
+    .rowImage img{
+        margin: 10px 0 30px 0;
+    }
+}
+
+@media (max-width: 768px){
+    .mainContainer{
+        row-gap: 0;
+    }
+
+    .rowTitle, .rowSubTitle{
+        text-align: center;
+    }
+
+    .rowBtn{
+        justify-content: center;
+    }
+
+    .rowImage img{
+        width: 300px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .mainContainer{
+        grid-template-rows: repeat(5, 1fr);
+        margin: 50px auto;
+    }
+
+    .rowImage{
+        display: none;
+    }
+
+    .rowSubTitle{
+        text-align: right;
+    }
+}
+
+@media (max-width: 480px){
+    .rowBtn{
+        flex-direction: column-reverse; 
+    }   
+
+    .rowBtn button{
+        padding: 5px 12px;
+        width: 190px;
+        margin: 5px auto;
+    }
+
+    .readMoreBtn{
+        justify-content: center;
+    }
+}

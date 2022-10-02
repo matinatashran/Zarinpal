@@ -1,0 +1,116 @@
+@font-face {
+    font-family: YekanBakhHeavy;
+    src: url("../fonts/YekanBakhHeavy.woff");
+}
+
+.sitePropertyContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteProps{
+    width: 68%;   
+    margin-right: 10px; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.siteProps > div:nth-child(1),
+.siteProps > div:nth-child(3){
+    border-right: 1px solid #d4d4d4;
+    padding: 13px 60px 13px 20px;
+}
+
+.siteProps > div:nth-child(1),
+.siteProps > div:nth-child(2){
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.siteProps > div:nth-child(2),
+.siteProps > div:nth-child(4){
+    padding: 13px 20px;
+}
+
+.siteProps .prop{
+    text-align: right;
+}
+
+.propTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.propSubTitle{
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: YekanBakhHeavy !important;
+}
+
+.propIcon{
+    margin-left: 20px;
+}
+
+.propIcon img{
+    width: 50px;
+}
+
+.propPrg{
+    font-size: 0.8rem;
+    color: #6d6d6d;
+    line-height: 28px;
+    margin: 0;
+}
+
+.siteDescription{
+    width: 30%;
+    text-align: right;
+    margin: 0 25px;
+}
+
+.siteDescription h2{
+    font-family: YekanBakhHeavy !important;
+}
+
+.siteDescription p{
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    line-height: 32px;
+}
+
+@media (max-width: 1024px){
+    .sitePropertyContainer{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .siteProps{
+        width: 100%;   
+        margin-right: 0; 
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .siteProps > div:nth-child(1),
+    .siteProps > div:nth-child(3){
+        border-right: none;
+        padding: 13px 15px;
+    }
+
+    .siteProps > div:nth-child(1),
+    .siteProps > div:nth-child(2){
+        border-bottom: none;
+    }
+
+    .siteDescription{
+        width: calc(100% - 50px);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px){
+    .siteProps{
+        grid-template-columns: repeat(1, minmax(250px, 350px));
+        gap: 20px;
+    }
+}

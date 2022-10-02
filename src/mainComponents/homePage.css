@@ -1,0 +1,33 @@
+@font-face {
+    font-family: yekanBakhMedium;
+    src: url("../fonts/YekanBakhMedium.woff");
+}
+
+.home{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: yekanBakhMedium, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+@media (max-width: 1200px){
+    .home{
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1060px){
+    .home{
+        width: 900px;
+    }
+}
+
+@media (max-width: 950px){
+    .home{
+        width: 98%;
+    }
+}
+
+

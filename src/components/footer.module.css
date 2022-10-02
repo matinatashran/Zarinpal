@@ -1,0 +1,278 @@
+@font-face {
+    font-family: YekanBakhHeavy;
+    src: url("../fonts/YekanBakhHeavy.woff");
+}
+
+@font-face {
+    font-family: IranYekan;
+    src: url("../fonts/iranyekanwebmedium.woff");
+}
+
+.startDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px;
+    border: 1px solid #9d9d9d;
+    border-radius: 15px;
+}
+
+.startDiv *{
+    margin: 10px 0;
+}
+
+.startDivTitle{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.startDivSubTitle{
+    font-size: 1.2rem;
+    color: #747480;
+}
+
+.startDivLink{
+    text-decoration: none;
+    color: #000;
+    background-color: #ffd900;
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.supportBox{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-weight: bold;
+    font-family: YekanBakhHeavy !important;
+    font-size: 1.2rem;
+    background-color: #fbf6f1;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.infoText{
+    display: flex;
+    justify-content: space-between;
+    color: #303030;
+}
+
+.infoText .phoneNumber{
+    color: #28457b;
+    margin: 0 5px;
+}
+
+.pipe{
+    margin: 0 20px;
+}
+
+.supportLink{
+    text-decoration: none;
+    color: #28457b;
+    font-family: YekanBakhMedium;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.supportLink img{
+    width: 12px;
+    margin-right: 7px;
+}
+
+/* ------- Footer Links ------- */
+
+.footerLinks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.siteLinks{
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+}
+
+.category{
+    text-align: right;
+}
+
+.categoryTitle{
+    font-family: YekanBakhHeavy !important;
+    font-size: 1rem;
+}
+
+.category ul{
+    list-style: none;
+
+}
+
+.category ul li{
+    padding: 7px 0;
+}
+
+.category ul li a{
+    text-decoration: none;
+    font-family: IranYekan, sans-serif;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.socialLinks{
+    text-align: right;
+}
+
+.socialTitle{
+    font-family: YekanBakhHeavy !important;
+    font-size: 1.1rem;
+    color: #303030;
+}
+
+.socialNetworks ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialLink{
+    display: flex;
+    padding: 12px;
+    margin: 3px;
+    border-radius: 15px;
+    background-color: #eff4fe;
+}
+
+.socialLink img{
+    width: 18px;
+    height: 17px;
+}
+
+
+@media (max-width: 1024px){
+    .supportBox{
+        font-size: 1rem;
+    }
+
+    .footerLinks{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .siteLinks{
+        justify-content: flex-end;
+    }
+
+    .socialNetworks{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .socialNetworks ul{
+        width: 240px;
+    }
+}
+
+@media (max-width: 756px){
+
+    .startDivTitle{
+        font-size: 1.3rem;
+    }
+
+    .startDivSubTitle{
+        font-size: 1rem;
+    }
+
+    .supportBox{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        background-color: #fff;
+    }
+    
+    .boxLeft{
+        background-color: #fbf6f1;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .siteLinks{
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+    }
+
+    .supportLink {
+        font-size: 0.9rem;
+    }
+
+    .supportLink img {
+        width: 9px;
+    }
+}
+
+@media (max-width: 576px){
+    .startDivTitle{
+        font-size: 24px;
+    }
+
+    .startDivSubTitle{
+        font-size: 18px;
+    }
+
+    .supportBox{
+        min-height: 150px;
+        font-size: 1.12rem;
+    }
+
+    .supportLink img{
+        width: 13px;
+    }
+
+    .infoText{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        line-height: 40px;
+    }
+
+    .pipe{
+        display: none;
+    }
+
+    .boxLeft{
+        margin-top: 10px;
+    }
+
+    .socialLinks{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .socialNetworks{
+        justify-content: center;
+    }
+
+    .socialNetworks ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .socialLink img{
+        width: 20px;
+        height: 19px;
+    }    
+}
+
+@media (max-width: 320px){
+    .boxLeft{
+        width: 100%;
+    }
+
+    .supportLink{
+        justify-content: flex-end;    
+    }
+}

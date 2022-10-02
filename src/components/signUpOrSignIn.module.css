@@ -1,0 +1,192 @@
+@font-face {
+    font-family: YekanBakhHeavy;
+    src: url("../fonts/YekanBakhHeavy.woff");
+}
+
+@font-face {
+    font-family: IranYekan;
+    src: url("../fonts/iranyekanwebmedium.woff");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.signUpSignInContainer{
+    width: 1000px;
+    min-height: 550px;
+    margin: 80px auto 50px auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.aplicationImage{
+    width: 60%;
+    background: url("../images/zarinpal-application.png");
+    background-size: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.rightDiv{
+    width: 40%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 30px;
+}
+
+.logo img{
+    width: 130px;
+}
+
+.rightPhrase h2{
+    font-family: YekanBakhHeavy;
+    font-size: 1.5rem;
+}
+
+.rightPhrase p{
+    font-family: IranYekan;
+    font-size: 0.87rem;
+    color: #424242;
+}
+
+.singInLink{
+    color: #187ff7;
+    text-decoration: none;
+}
+
+.fields{
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    gap: 20px;
+    margin: 20px 0;
+    direction: rtl;
+}
+
+.field{
+    position: relative;
+}
+
+.lblInput{
+    background-color: #fff;
+    font-size: 0.8rem;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 8px;
+    transition: 0.3s;
+    cursor: text;
+}
+
+.fieldsInput, 
+.signInfieldsInput{
+    text-align: right;
+    padding: 13px 7px;
+    font-family: IranYekan;
+    border-radius: 4px;
+    color: #808080;
+}
+
+.signInfieldsInput{
+    width: 95%;
+    margin: 5px 0 10px 0;
+}
+
+.fieldsInput:focus, 
+.signInfieldsInput:focus{
+    outline: none;
+}
+
+.fields section:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.fields section:nth-child(3) input{
+    width: 104%;
+}
+
+.error{
+    font-size: 0.85rem;
+    color: #de0000;
+}
+
+.btnSection{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.signUpBtn{
+    padding: 8px 25px;
+    background-color: #ffe53b;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.87rem;
+    font-family: IranYekan;
+    font-weight: bold;
+    box-shadow: 0 3px 15px 1px #feed7d;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.signUpBtn:hover{
+    box-shadow: none;
+}
+
+
+@media (max-width: 1000px){
+    .signUpSignInContainer{
+        width: 410px;
+        margin: 70px auto 50px auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+    }
+
+    .aplicationImage{
+        display: none;
+    }
+
+    .rightDiv{
+        width: 100%;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        line-height: 40px;
+    }
+
+    .fields section:nth-child(3) input{
+        width: 101%;
+    }
+}
+
+@media (max-width: 576px){
+
+    .signUpSignInContainer{
+        width: 85%;
+    }
+    
+    .fields{
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .fields section:nth-child(3){
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .fieldsInput{
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px){
+    .signUpSignInContainer{
+        width: 100%;
+    }
+}

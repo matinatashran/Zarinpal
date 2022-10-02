@@ -1,0 +1,225 @@
+@font-face {
+    font-family: yekanBakhMedium;
+    src: url("../fonts/YekanBakhMedium.woff");
+}
+
+.navbarContainer{
+    width: calc(100% - 80px);
+    height: 60px;
+    margin: 20px auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: #ffffffe2;
+    top: 0;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.logo{
+    text-align: right;
+}
+
+.logo img{
+    width: 90%;
+}
+
+.leftNavbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.navbarMenu{
+    list-style: none;
+    display: flex;
+    font-size: 0.75rem;
+}
+
+.navbarMenu li{
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+.navbarMenu li:last-child, 
+.navbarMenu li:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.navbarMenu li:last-child .dropDownBtn,
+.navbarMenu li:first-child .dropDownBtn{
+    margin: 0 5px;
+    width: 8px;
+}
+
+/* More menu - start*/
+
+.moreMenu{
+    position: relative;
+    transition: 1s;
+}
+
+.moreSubMenu{
+    list-style: none;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 120px;
+    padding: 10px 30px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+
+.products{
+    flex-wrap: wrap-reverse;
+    text-align: right;
+    width: 300px;
+    height: 215px;
+}
+
+.moreSubMenu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.moreSubMenu .menuTitle{
+    /* font-size: 1rem; */
+    display: block;
+}
+
+.moreSubMenu .menuSubTitle{
+    font-size: 0.8rem;
+}
+
+.moreSubMenu::after{
+    content: "";
+    width: 158px;
+    border-radius: 16px;
+    height: 50px;
+    top: -5px;
+    left: 1px;
+    position: absolute;
+    z-index: -99;
+    background-color: #fff56b;
+}
+
+.moreSubMenu:hover{
+    opacity: 1;
+}
+
+.moreSubMenu li{
+    margin: 10px 5px;
+}
+
+/* More menu - end*/
+
+.zarinLink a{
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e1edff;
+    font-family: yekanBakhMedium, sans-serif;
+    color: #000099;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.burgerMenu{
+    cursor: pointer;
+    display: none;
+}
+
+/* mobile menu */
+
+.menubar{
+    
+    list-style: none;
+    margin: 40px 10px;
+    position: relative;
+}
+
+.cross{
+    position: absolute;
+    width: 16px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.horizontalLine{
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+}
+
+.zarinpalLink{
+    background-color: #dfdfdf;
+    padding: 5px 10px;
+}
+
+.zarinpalLink a{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-family: YekanBakhMedium;
+    color: #000099;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: flex-end;
+}
+
+.arrowLeft{
+    width: 9px;
+    margin: 0 5px;
+}
+
+
+@media (max-width: 1400px){
+    .leftNavbar{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1024px){
+    .zarinLink{
+        display: none;
+    }
+
+    .leftNavbar{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 976px){
+    .leftNavbar nav{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: block;
+    }
+}
+
+@media (max-width: 576px){
+    .burgerMenu img{
+        width: 25px;
+    }
+}
+
+@media (max-width: 480px){
+    .navbarContainer{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+}
