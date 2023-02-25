@@ -1,13 +1,12 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+// styles
+import style from '../styles/signUpOrSignIn.module.css';
 
-// style
-import style from './signUpOrSignIn.module.css';
-
-// images
-import zarinpalLogo from '../images/logo-white.svg';
+// icons
+import zarinpalLogo from '../icons/logo-white.svg';
 
 // helper
 import { validate } from '../helper/fuctions';

@@ -18,7 +18,7 @@
 .arrowBottom{    
     width: 100px;
     height: 40px;
-    background: url("../images/arrowbottom.svg");
+    background: url("../icons/arrowbottom.svg");
     background-size: cover;
     position: absolute;
     right: calc(50% - 50px);

@@ -2,14 +2,14 @@ import React from 'react';
 import { useTitle } from '../hooks/hooks';
 
 // style
-import "./homePage.css";
+import "../styles/homePage.css";
 
 // components
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
-import Main from '../components/Main';
-import SiteProperty from '../components/SiteProperty';
-import Footer from '../components/Footer';
+import Navbar from './Navbar';
+import Header from './Header';
+import Main from './Main';
+import SiteProperty from './SiteProperty';
+import Footer from './Footer';
 
 
 const HomePage = () =>{

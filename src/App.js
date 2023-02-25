@@ -1,21 +1,18 @@
-import './App.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
+// styles
+import './styles/App.css';
+
 // components
-// import Navbar from './components/Navbar';
-// import Header from './components/Header';
-// import Main from './components/Main';
-// import SiteProperty from './components/SiteProperty';
-// import Footer from './components/Footer';
+import LandingPage from './components/LandingPage';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
-import HomePage from './mainComponents/HomePage';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/home' element={ <HomePage/> }/>
+        <Route path='/home' element={ <LandingPage/> }/>
         <Route path='/sign-in' element={ <SignIn/> }/>
         <Route path='/sign-up' element={ <SignUp/> }/>
         <Route path='/' element={<Navigate to="/home"/>}/>

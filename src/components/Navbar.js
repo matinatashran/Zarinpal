@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+// styles
+import style from '../styles/navbar.module.css';
 
-// style
-import style from './navbar.module.css';
-
-// images
-import logo from '../images/logo-white.svg';
-import dropDown from '../images/down-arrow-svgrepo-com.svg';
-import burgerMenuImg from '../images/hamburger.svg';
-import arrowLeft from '../images/arrow-left.svg';
-import cross from '../images/cross.svg';
-import { Link } from 'react-router-dom';
+// icons
+import logo from '../icons/logo-white.svg';
+import dropDown from '../icons/down-arrow-svgrepo-com.svg';
+import burgerMenuImg from '../icons/hamburger.svg';
+import arrowLeft from '../icons/arrow-left.svg';
+import cross from '../icons/cross.svg';
 
 const MobileMenuDiv = styled.div`
     width: 100%;

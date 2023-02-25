@@ -24,7 +24,7 @@
 
 .aplicationImage{
     width: 60%;
-    background: url("../images/zarinpal-application.png");
+    background: url("../icons/zarinpal-application.png");
     background-size: cover;
     border-radius: 15px 0 0 15px;
 }

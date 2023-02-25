@@ -1,15 +1,13 @@
-import React from 'react';
+// styles
+import style from '../styles/main.module.css';
 
-// style
-import style from './main.module.css';
-
-// images
-import arrowLeft from '../images/arrow-left.svg';
-import pg from '../images/pg.svg';
-import socialImage from '../images/social-image.svg';
-import zarinCard from '../images/zarincard.svg';
-import payOut from '../images/payout.svg';
-import zarinPlus from '../images/zarinplus.svg';
+// icons
+import arrowLeft from '../icons/arrow-left.svg';
+import pg from '../icons/pg.svg';
+import socialImage from '../icons/social-image.svg';
+import zarinCard from '../icons/zarincard.svg';
+import payOut from '../icons/payout.svg';
+import zarinPlus from '../icons/zarinplus.svg';
 
 const Main = () => {
     return (

@@ -1,13 +1,10 @@
-import React from 'react';
+// styles
+import style from '../styles/siteProperty.module.css';
 
-// style
-import style from './siteProperty.module.css';
-
-// images
-import splite from '../images/splite.svg';
-import verified from '../images/verifiedIcon.svg';
-import support from '../images/support.svg';
-
+// icons
+import splite from '../icons/splite.svg';
+import verified from '../icons/verifiedIcon.svg';
+import support from '../icons/support.svg';
 
 const SiteProperty = () => {
     return (

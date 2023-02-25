@@ -1,12 +1,12 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-// style
-import style from './header.module.css';
+// styles
+import style from '../styles/header.module.css';
 
-// images
-import mobileImage from '../images/home.svg';
-import dropDown from '../images/down-arrow-svgrepo-com.svg';
+// icons
+import mobileImage from '../icons/home.svg';
+import dropDown from '../icons/down-arrow-svgrepo-com.svg';
 
 const Header = () => {
     const r = useRef();

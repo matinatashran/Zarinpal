@@ -1,15 +1,13 @@
-import React from 'react';
+// styles
+import style from '../styles/footer.module.css';
 
-// style
-import style from './footer.module.css';
-
-// images
-import instagram from '../images/instagram.svg';
-import twitter from '../images/twitter.svg';
-import telegram from '../images/telegram.svg';
-import linkedin from '../images/linkedin.svg';
-import aparat from '../images/aparat.svg';
-import arrowLeft from '../images/arrow-left.svg';
+// icons
+import instagram from '../icons/instagram.svg';
+import twitter from '../icons/twitter.svg';
+import telegram from '../icons/telegram.svg';
+import linkedin from '../icons/linkedin.svg';
+import aparat from '../icons/aparat.svg';
+import arrowLeft from '../icons/arrow-left.svg';
 
 
 const Footer = () => {
